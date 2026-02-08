@@ -25,7 +25,7 @@
 				<div class={`relative h-full w-full ${index === 1 ? 'aspect-[3/4]' : 'aspect-[4/3]'}`}>
 					<img
 						src={item.image}
-						alt={item.title}
+						alt={localize(item.title, $locale)}
 						class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
 					/>
 					<div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/10 to-transparent"></div>

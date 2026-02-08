@@ -16,7 +16,7 @@
 			on:click={onClose}
 			aria-label="Close menu"
 		></button>
-		<aside class="absolute left-0 top-0 h-full w-[78%] max-w-xs bg-white shadow-2xl">
+		<aside class="absolute top-0 left-0 h-full w-[78%] max-w-xs bg-white shadow-2xl">
 			<div class="flex items-center justify-between border-b border-slate-200 px-6 py-5">
 				<div class="flex items-center gap-3 text-slate-900">
 					<div
@@ -31,7 +31,7 @@
 					<span class="text-lg font-semibold">TravelGenZ</span>
 				</div>
 				<button
-					class="btn btn-ghost btn-sm rounded-full text-slate-500 hover:text-slate-700"
+					class="btn rounded-full text-slate-500 btn-ghost btn-sm hover:text-slate-700"
 					on:click={onClose}
 					type="button"
 				>
@@ -55,7 +55,7 @@
 				<div class="mb-4 flex items-center gap-2">
 					{#each localeOptions as option}
 						<button
-							class={`btn btn-sm flex-1 rounded-full ${
+							class={`btn flex-1 rounded-full btn-sm ${
 								$locale === option.id
 									? 'border-none bg-slate-900 text-white'
 									: 'border border-slate-200 bg-white text-slate-700'
